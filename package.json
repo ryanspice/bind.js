@@ -1,6 +1,6 @@
 {
   "name": "bind.js",
-  "description": "Simple data binding for callbacks & HTML (also node.js compatible).",
+  "description": "Simple data binding for callbacks & HTML (also node.js compatible). Added IE11 support.",
   "main": "lib/bind.js",
   "directories": {
     "test": "tests"
@@ -13,9 +13,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "http://github.com/remy/bind.js.git"
+    "url": "http://github.com/ryanspice/bind.js.git"
   },
-  "author": "Remy Sharp",
+  "author": "Remy Sharp + Ryan Spice",
   "license": "MIT",
   "keywords": [
     "data-binding",
