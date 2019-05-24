@@ -89,7 +89,7 @@ Individual array elements can be also mapped using the dot notation and the inde
 In the example below, when the first cat name in the array changes, it will update the DOM.
 
 ```js
-var data = Bind({
+var data = new Bind({
   cats: ['ninja', 'missy', 'dizzy']
 }, {
   cats: {
@@ -110,7 +110,7 @@ data.cats.unshift('sam');
 If you want the DOM to drive the initial values of the bind object, then you'll need to set the JavaScript property value to `null` and it will read the value from the DOM at startup:
 
 ```js
-var data = Bind({
+var data = new Bind({
   price: null
 }, {
   price: '.price',
@@ -126,7 +126,7 @@ Now in the HTML:
 Now `data.price` has the value of `£10.50`. If you wanted this to be a float instead, you would use the `parse` and `transform` methods:
 
 ```js
-var data = Bind({
+var data = new Bind({
   price: null
 }, {
   price: {
